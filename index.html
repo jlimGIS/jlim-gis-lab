@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Customize Title -->
+		<title>Jack Lim WebPage</title>
+		<!-- Personal Icon -->
+		<link rel="shortcut icon" href="icon/favicon.ico">
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- ArcGIS CSS -->
+		<link rel="stylesheet" href="https://js.arcgis.com/3.30/esri/css/esri.css">
+		<!-- Personal CSS -->	
+		<link rel="stylesheet" href="css/indexstyle.css">	
+		<script src="https://js.arcgis.com/3.30/"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbt70HZOhabDN375gdraQ80nqdMPNVsRI" async defer></script>	
+	</head>
+
+	<body id="top">
+		<!-- cover menu block -->
+		<div id="webMenuBlock" class="menuBlock" >
+			<div id="menuBtnGroup" class="menuBtnGroup hide">
+				<div class="menuBtns"><button class="menu-nav btn btn-primary btn-trans" data-id="top">Top</button></div>
+				<div class="menuBtns"><button class="menu-nav btn btn-primary btn-trans" data-id="about">About Me</button></div>
+				<div class="menuBtns"><button class="menu-nav btn btn-primary btn-trans" data-id="skills">My Skills</button></div>
+				<div class="menuBtns"><button class="menu-nav btn btn-primary btn-trans" data-id="experiences">My Experiences</button></div>
+				<div class="menuBtns"><button class="menu-nav btn btn-primary btn-trans" data-id="works">My Works</button></div>
+				<div class="menuBtns"><button class="menu-nav btn btn-primary btn-trans" data-id="interests">Interests</button></div>
+				<div id="closeMenu" class="closeBtn"></div>
+	        </div>
+	    </div>
+		<!-- Header and Menu Icon -->
+		<header class="site-navbar">
+			<div class="container">
+				<div class="site-nav site-logo">
+					<btn onclick="contactMe()">&#74;&#97;&#99;&#107; &#76;&#105;&#109;</btn>
+				</div>
+				<div id="site-burger" class="site-nav">
+					<btn id="webMenu">&#x2630;</btn>
+				</div>
+			</div>
+		</header>
+		<!-- Simple Intro -->
+		<div class="ftco-blocks-cover-1">
+		 	<div class="bgImg cover">
+				<div class="container hgt">
+					<div class="row center">
+						<div class="vcenter text-center">
+							<h1 class="text-white">Chang Cheak Lim WebPage</h1>
+							<p class="">
+								Current student of British Columbia Institute of Technology. Study in Geographic Information System Advanced Diploma pragram. 
+							</p>
+							<p>
+								<button class="menu-nav btn btn-primary btn-trans" data-id="about">About Me</button>
+							</p>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- About Me -->
+		<div id="about" class="site-section bgGry">
+			<div class="row md-5">
+					<div class="mx-auto text-center" style="margin:auto;">
+						<h2 class="sec-heading">About Me</h2>
+					</div>
+				</div>
+			<div class="container hgt">
+				<div class="row align-items-center">
+					<div class="col-md-4">
+						<img src="images/me.jpg" alt="my picture" class="img-fluid">
+					</div>
+					<div class="col-md-8">
+						<p>
+							Hi, this is Jack Lim. I was born and raised in Malaysia. I have completed both my B.A. and M.A.Geography from Taiwan, where my passion for geospatial science began.
+						</p>
+						<p>
+							Since I have developed a strong interest in geospatial science, I never stopped trying to integrate geographic knowledge and information science technology, which forced me to learn relevant skills continually, especially programming skills.
+						</p>
+						<p>
+							I am trained in the .NET MVC5, C#, SQL Server, JavaScript, HTML5 stack. I have also explored ArcPy script tools development and ArcGIS processing tools customization.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- My Skills -->
+		<div id="skills" class="site-section">
+			<div class="container hgt">
+				<div class="row md-5">
+					<div class="mx-auto text-center" style="margin:auto;">
+						<h2 class="sec-heading">My Skills</h2>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-md-4">
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>C#</span>
+								<!--<span class="ml-auto">80%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>.NET MVC5</span>
+								<!--<span class="ml-auto">75%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>Python</span>
+								<!--<span class="ml-auto">72%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>ArcPy</span>
+								<!--<span class="ml-auto">70%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>MS SQL</span>
+								<!--<span class="ml-auto">76%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>LinQ</span>
+								<!--<span class="ml-auto">75%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>Lambda Expression</span>
+								<!--<span class="ml-auto">70%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>Javascript</span>
+								<!--<span class="ml-auto">85%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>AcrGIS API for Javascript</span>
+								<!--<span class="ml-auto">85%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>Google Map API</span>
+								<!--<span class="ml-auto">80%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>Leaflet</span>
+								<!--<span class="ml-auto">70%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>JQuery</span>
+								<!--<span class="ml-auto">80%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>Highcharts JS</span>
+								<!--<span class="ml-auto">83%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 83%;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>Bootstrap</span>
+								<!--<span class="ml-auto">78%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>ArcGIS Pro</span>
+								<!--<span class="ml-auto">85%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>AcrGIS Desktop 10.7</span>
+								<!--<span class="ml-auto">85%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>App Studio</span>
+								<!--<span class="ml-auto">70%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>WebApp Builder</span>
+								<!--<span class="ml-auto">78%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>ArcGIS Online</span>
+								<!--<span class="ml-auto">80%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>QGIS</span>
+								<!--<span class="ml-auto">74%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 74%;" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progress-wrap mb-4">
+							<div class="d-flex">
+								<span>Visual Studio</span>
+								<!--<span class="ml-auto">80%</span>-->
+							</div>
+							<div class="progress rounded-0" style="height: 7px;">
+								<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- My Experiences Contents -->
+		<div id="experiences" class="site-section bgGry">
+			<div class="container">
+				<div class="row md-5">
+					<div class="mx-auto text-center" style="margin:auto;">
+						<h2 class="sec-heading">My Experiences</h2>
+					</div>
+				</div>
+				<div class="eq-height row md-5">
+					<div class="eq-height col-md-6 col-lg-3">
+						<div class="jbs text-center">
+							<span class="d-block wrap-icon">
+								<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+							</span>
+							<h3>GIS Analysis</h3>
+							<p>Analyze geographic data, extract valuable information and output through various techniques.</p>
+						</div>
+					</div>
+					<div class="eq-height col-md-6 col-lg-3">
+						<div class="jbs text-center">
+							<span class="d-block wrap-icon">
+								<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+							</span>
+							<h3>WebGIS Develop</h3>
+							<p>According to client's demand, develop and deploy WebGIS application system by using mapping API such as ArcGIS API for JavaScript.</p>
+						</div>
+					</div>
+					<div class="eq-height col-md-6 col-lg-3">
+						<div class="jbs text-center">
+							<span class="d-block wrap-icon">
+								<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+							</span>
+							<h3>Script Tool Creation</h3>
+							<p>Customize ArcGIS processing tools through Python scripting language and ArcPy library.</p>
+						</div>
+					</div>
+					<div class="eq-height col-md-6 col-lg-3">
+						<div class="jbs text-center">
+							<span class="d-block wrap-icon">
+								<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+							</span>
+							<h3>Database Design</h3>
+							<p>Help client analysis and design database to build up gis data storage mechanism.</p>
+						</div>
+					</div>
+				</div>
+				<div class="eq-height row md-5">
+					<div class="eq-height col-md-6 col-lg-3">
+						<div class="jbs text-center">
+							<span class="d-block wrap-icon">
+								<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+							</span>
+							<h3>Full Stack Web Development</h3>
+							<p>Implement web application through JavaScript, HTML5, .Net MVC 5, C#, LinQ, MS SQL, etc.</p>
+						</div>
+					</div>
+					<div class="eq-height col-md-6 col-lg-3">
+						<div class="jbs text-center">
+							<span class="d-block wrap-icon">
+								<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+							</span>
+							<h3>Application Maintain</h3>
+							<p>Maintain existing WebGIS application, and extend functionalities according to client's demand.</p>
+						</div>
+					</div>
+					<div class="eq-height col-md-6 col-lg-3">
+						<div class="jbs text-center">
+							<span class="d-block wrap-icon">
+								<span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span>
+							</span>
+							<h3>ArcGIS WebApp Extension</h3>
+							<p>Customize additional functionalities and aggregate existing WebApp's source code.</p>
+						</div>
+					</div>
+					<div class="eq-height col-md-6 col-lg-3">
+						<div class="jbs text-center">
+							<span class="d-block wrap-icon">
+								<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+							</span>
+							<h3>MobileGIS Creation</h3>
+							<p>Create GIS mobile app through App Studio for ArcGIS which able to integrate all ESRI products.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- My Works -->
+		<div id="works" class="site-section">
+			<div class="container">
+				<div class="row md-5">
+					<div class="mx-auto text-center" style="margin:auto;">
+						<h2 class="sec-heading">My Works</h2>
+					</div>
+				</div>
+				<div class="row">
+					<h2 class="md-4">ArcGIS Map API & Google Map API Comparison</h2>
+					<div class="col-md-6  col-xs-12">
+						<div class='mapTitle' style='color:red;'>
+							ArcGIS Map
+						</div>
+						<div id="arcgisMap" class='mapDiv'></div>
+					</div>
+					<div class="col-md-6  col-xs-12">
+						<div class='mapTitle' style='color:red;'>
+							Google Map
+						</div>
+						<div id="googleMap" class='mapDiv'></div>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-md-10" style="margin: auto;">
+						<h2 class="md-4">Deforestation Analysis</h2>
+						<div class="item intImg">
+							<img class="img-fluid" src="images/deforestation.png">
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-md-8" style="margin: auto;">
+						<h2 class="md-4">Corridor Analysis</h2>
+						<div class="item intImg">
+							<img class="img-fluid" src="images/corridor.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- My Personal Interests -->
+		<div id="interests" class="site-section bgGry">
+			<div class="container">
+				<div class="row md-5">
+					<div class="mx-auto text-center" style="margin:auto;">
+						<h2 class="sec-heading">Interests</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="item intImg">
+							<img class="img-fluid" src="images/1.jpg">
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="item intImg">
+							<img class="img-fluid" src="images/2.jpg">
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="item intImg">
+							<img class="img-fluid" src="images/3.jpg">
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="item intImg">
+							<img class="img-fluid" src="images/4.jpg">
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="item intImg">
+							<img class="img-fluid" src="images/5.jpg">
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="item intImg">
+							<img class="img-fluid" src="images/6.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="site-section ftSec">
+			<div class="container">
+				<div class="row">
+					<div class="mx-auto text-center" style="margin:auto;">
+						<p style="font-size:1.3rem;font-weight: 600;color:#666666">Copyright &copy; 2019 Jack Lim Studio |  All rights reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Javascript -->
+		<script type='text/javascript' src='jscript/indexJS.js'></script>
+		<script type='text/javascript' src='jscript/mapJS.js'></script>
+	</body>
+</html>
