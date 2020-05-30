@@ -1,0 +1,2 @@
+# jlim-gis-lab
+A GIS software developer with 3 + years of foreign experience in front-end, back-end, and database development. A passionate, high-performance programmer with a strong curiosity to incorporating interactive maps and use geospatial visualization/analysis to solve real-world problems. A 2020 GIS graduate from the British Columbia Institute of Technology interested in web-based geospatial applications and data visualization.
